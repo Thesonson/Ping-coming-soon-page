@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;;
+    margin: 8rem 12.5rem 2rem ;
+    height: 100vh;
+}
+
+.container{
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+header  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    
+}
+header img{
+   width: 6.6rem;
+}
+.content{
+    text-align: center;
+    padding: 2rem;
+    margin: 1.8rem 0;
+}
+
+.content h2{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:  hsl(0, 0%, 59%) ;
+}
+.content h2 span {
+    color:  hsl(209, 33%, 12%) ;
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+.content p{
+    font-size: 1.5rem;
+    color: #0e1317;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    padding-left: 2.5rem;
+}
+
+.input .btn{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #4d7bf3;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgba(77,123,243, 0.9);
+}
+.img img{
+    width: 100%;
+    margin-top: 6rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+}
+
+footer .icons{
+    display: flex;
+    margin: 1.5rem;
+    font-size: 1rem;
+
+}
+.icons a {
+    margin: 1.5rem;
+   font-size: 1rem;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 30px;
+   color: #4b78f7 ;
+   font-size: 1rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: #a2a2a2;
+    
+}
+
+.result{
+  font-size: 11px;  
+  margin-bottom: 5px;
+}
+
+@media  screen  and (min-width:768px){
+  
+    header img {
+        width: 7.7rem;
+        margin-bottom: -2.2rem;
+    }
+    .input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+     
+    }
+    .input input{
+        margin-right: 1.2rem ;
+       width: 60%;
+    }
+    .input .btn{
+        width: 30%;
+
+        
+    }
+    .input p {
+      position: absolute;  
+      left: 50px;
+      bottom: -10px;
+    }
+    .img img{
+       width: 90%; 
+
+    }
+}
+
+@media  screen  and (min-width:1240px){
+  
+
+  .input  input{
+  width: 35%;
+  
+   }
+  .input .btn{
+    width: 10%;
+   }
+    .img img{
+       max-width:  60%; 
+        margin-left: 25rem;
+     }
+     .input p {
+        margin-left:35vmin;
+        text-align: center;
+     }
+}
+
+@media  screen  and (min-width:1440px){
+    .input p {
+        margin-left:30vmin;
+        text-align: center;
+     }
+     .input input{
+        width: 50%;
+     }
+}
+@media  screen  and (min-width:2048px){
+    .input p {
+        margin-left:60vmin;
+        text-align: center;
+     }
+}
